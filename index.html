@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="styles.css" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+ <div class="nama">
+  <h1 class="logo">Ciffa Beauty House</h1>
+</div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="tampilkan('beranda')">BERANDA</a></li>
+        <li><a href="#" onclick="tampilkan('produk')">PRODUK</a></li>
+        <li><a href="#" onclick="tampilkan('kategori')">KATEGORI</a></li>
+        <li><a href="#" onclick="tampilkan('kontak')">KONTAK</a></li>
+      </ul>
+      <div class="keranjang">
+  <a href="#" onclick="tampilkan('keranjang-belanja')"><img src="images/keranjang.png" alt="Keranjang" /></a>
+</div>
+    </nav>
+  </header>
+
+   <!-- BERANDA -->
+  <main>
+    <!-- PRODUK BERANDA -->
+    <section id="beranda" class="halaman">
+      <h2>Selamat Datang di Toko Online Kami!</h2>
+      <p>Temukan produk-produk kecantikan dan perawatan terbaik yang kami tawarkan. Dari skincare, makeup, hingga aksesoris—semuanya hadir untuk mendukung penampilan dan kesehatan kulit Anda. Belanja mudah, cepat, dan aman!</p>
+      <div class="produk">
+        <article>
+          <img src="images/Images 1.jpeg" alt="Brightening Set" />
+          <h3>Brightening Advance Glowing Set</h3>
+          <p>Brightening Advance Glowing Set adalah rangkaian perawatan wajah...</p>
+          <p>Rp650.000</p>
+          <a href="#" class="button-beli">BELI</a>
+        </article>
+        <article>
+          <img src="images/Images 2.jpeg" alt="Matte Makeup Set" />
+          <h3>Matte Makeup Set</h3>
+          <p>Matte Makeup Set adalah koleksi makeup yang memberikan hasil akhir matte...</p>
+          <p>Rp500.000</p>
+          <a href="#" class="button-beli">BELI</a>
+        </article>
+        <article>
+          <img src="images/Images 3.jpeg" alt="Clay Stick" />
+          <h3>Skintific Clay Stik Masker</h3>
+          <p>Clay Stick Mask membersihkan pori-pori dan mengontrol minyak...</p>
+          <p>Rp340.000</p>
+          <a href="#" class="button-beli">BELI</a>
+        </article>
+        <article>
+          <img src="images/Images 4.jpeg" alt="Skin Barrier" />
+          <h3>Skin Barrier Protector</h3>
+          <p>Melindungi kulit dan memperkuat lapisan pelindung alami kulit.</p>
+          <p>Rp680.000</p>
+          <a href="#" class="button-beli">BELI</a>
+        </article>
+        <article>
+          <img src="images/Skintific_Loose_Powder.png" alt="Skin Barrier" />
+          <h3>loose powder skintific</h3>
+          <p>Loose powder Skintific,khususnya seri Invisiblur All Day
+             <p>Rp680.000</p>
+          <a href="#" class="button-beli">BELI</a>
+        </article>
+        <article>
+          <img src="images/feelingSerum.jpeg" alt="Skin Barrier" />
+          <h3>Peeling Serum skintific</h3>
+          <p>Peeling serum Skintific serum eksfoliasi yang mengandung 12% AHA BHA PHA LHA
+             <p>Rp123.000</p>
+          <a href="#" class="button-beli">BELI</a>
+        </article>
+      </div>
+      <!-- KATEGORI BERANDA -->
+<section id="kategori-beranda">
+  <h2>Kategori Produk</h2>
+  <div class="daftar-kategori">
+    <div class="kategori-item" onclick="tampilkan('set-skincare')">
+      <h3>Set Skincare</h3>
+    </div>
+    <div class="kategori-item" onclick="tampilkan('makeup')">
+      <h3>Makeup</h3>
+    </div>
+    <div class="kategori-item" onclick="tampilkan('clay-stik-masker')">
+      <h3>Clay Stik Masker</h3>
+    </div>
+  </div>
+</section>
+      <!-- KONTAK BERANDA -->
+     <h2>Kontak Kami</h2>
+     <p>Kami selalu siap membantu Anda!
+Jika Anda memiliki pertanyaan seputar produk, pemesanan, pengiriman, atau ingin memberikan masukan, jangan ragu untuk menghubungi kami.</p>
+  <div class="kontak-item">
+    <img src="images/email.png" alt="Email" class="ikon-kontak">
+    <a href="mailto:info@ciffabeautyhouse.com">info@ciffabeautyhouse.com</a>
+  </div>
+  <div class="kontak-item">
+    <img src="images/facebook.png" alt="Facebook" class="ikon-kontak">
+    <a href="https://www.facebook.com/share/18ufFPefwz/?mibextid=wwXIfr" target="_blank">Sifa Setiani</a>
+  </div>
+  <div class="kontak-item">
+    <img src="images/instagram.png" alt="Instagram" class="ikon-kontak">
+    <a href="https://www.instagram.com/cifaa_123" target="_blank">@cifaa_123 </a>
+  </div>
+</section>
+
+<!-- BAGIAN MENU-->
+    <!-- MENU PRODUK -->
+    <section id="produk" class="halaman" style="display: none;">
+      <h2>Produk</h2>
+      <p>Kami menyediakan berbagai produk kecantikan dan perawatan tubuh berkualitas tinggi yang dirancang untuk memenuhi kebutuhan kulit dan gaya hidup Anda. Temukan rangkaian skincare, makeup, serta perawatan tubuh terbaik yang sedang tren!</p>
+      <div class="produk">
+        <article>
+          <img src="images/Images 1.jpeg" alt="Brightening Set" />
+          <h3>Brightening Advance Glowing Set</h3>
+          <p>Rangkaian perawatan kulit lengkap untuk mencerahkan dan memberikan efek glowing alami. Mengandung niacinamide, vitamin C, dan hyaluronic acid yang membantu menyamarkan noda hitam, meratakan warna kulit, dan menjaga kelembapan. Kulit tampak lebih cerah, sehat, dan bercahaya sejak pemakaian pertama.</p>
+          <p>Rp650.000</p>
+          <a href="#" class="button-beli">BELI</a>
+        </article>
+        <article>
+          <img src="images/Images 2.jpeg" alt="Matte Makeup Set" />
+          <h3>Matte Makeup Set</h3>
+          <p>Set riasan lengkap dengan hasil akhir matte yang tahan lama. Terdiri dari foundation, bedak, blush, dan lip cream dengan formula ringan yang mudah dibaurkan dan tidak membuat kulit terasa berat. Cocok untuk tampilan natural hingga glam, tanpa kilap berlebih sepanjang hari.</p>
+          <p>Rp500.000</p>
+          <a href="#" class="button-beli">BELI</a>
+        </article>
+        <article>
+          <img src="images/Images 3.jpeg" alt="Clay Stick" />
+          <h3>Skintific Clay Stik Masker</h3>
+          <p>Skintific Clay Stik Masker Masker praktis dalam bentuk stik yang membantu mengangkat kotoran, minyak berlebih, dan membersihkan pori-pori secara menyeluruh. Diperkaya dengan kandungan niacinamide dan salicylic acid untuk kulit lebih cerah dan bebas jerawat. Cocok digunakan 2–3 kali seminggu untuk hasil maksimal.</p>
+          <p>Rp340.000</p>
+          <a href="#" class="button-beli">BELI</a>
+        </article>
+        <article>
+          <img src="images/Images 4.jpeg" alt="Skin Barrier" />
+          <h3>Skin Barrier Protector</h3>
+          <p>Perlindungan optimal untuk kulit sensitif dan mudah iritasi. Dengan formula ringan yang kaya akan ceramide dan centella asiatica, produk ini membantu memperkuat lapisan pelindung kulit, menjaga kelembapan, dan meredakan kemerahan. Cocok untuk semua jenis kulit, terutama kulit kering dan sensitif.</p>
+          <p>Rp680.000</p>
+          <a href="#" class="button-beli">BELI</a>
+        </article>
+         <article>
+          <img src="images/Skintific_Loose_Powder.png" alt="Skin Barrier" />
+          <h3>loose powder skintific</h3>
+          <p>Loose powder Skintific, khususnya seri Invisiblur All Day Loose Powder, adalah bedak tabur yang diformulasikan dengan teknologi Soft Focus Polymer untuk menghasilkan partikel bedak halus yang menyatu dengan kulit dan memberikan efek "blurring" atau menyamarkan pori-pori serta tampilan kulit yang lebih halus. Bedak ini juga dirancang untuk mengontrol kilap berlebih pada wajah, menjaga riasan tetap segar hingga 12 jam, dan memberikan hasil akhir yang matte dan natural. </p>
+          <p>Rp250.000</p>
+          <a href="#" class="button-beli">BELI</a>
+        </article>
+         <article>
+          <img src="images/feelingSerum.jpeg" alt="Skin Barrier" />
+          <h3>Peeling Serum skintific</h3>
+          <p>Peeling serum Skintific adalah serum eksfoliasi yang mengandung 12% AHA BHA PHA LHA untuk membantu mengangkat sel kulit mati, menghaluskan tekstur kulit, menyamarkan pori-pori, mencerahkan kulit, dan mengurangi komedo serta bruntusan. Serum ini diformulasikan untuk semua jenis kulit, termasuk kulit berjerawat, dan dapat membantu merawat dan menjaga kesehatan kulit. 
+             <p>Rp123.000</p>
+          <a href="#" class="button-beli">BELI</a>
+        </article>
+      </div>
+    </section>
+    <!-- KATEGORI (Halaman tersendiri tanpa gambar) -->
+<section id="kategori" class="halaman" style="display: none;">
+  <h2>Kategori Produk</h2>
+  <div class="daftar-kategori">
+    <div class="kategori-item" onclick="tampilkan('set-skincare')">
+      <h3>Set Skincare</h3>
+    </div>
+    <div class="kategori-item" onclick="tampilkan('makeup')">
+      <h3>Makeup</h3>
+    </div>
+    <div class="kategori-item" onclick="tampilkan('clay-stik-masker')">
+      <h3>Clay Stik Masker</h3>
+    </div>
+  </div>
+</section>
+    <!-- KONTAK -->
+<section id="kontak" class="halaman" style="display: none;">
+  <h2>Kontak Kami</h2>
+  <p>Kami selalu siap membantu Anda!
+Jika Anda memiliki pertanyaan seputar produk, pemesanan, pengiriman, atau ingin memberikan masukan, jangan ragu untuk menghubungi kami.</p>
+  <div class="kontak-item">
+    <img src="images/email.png" alt="Email" class="ikon-kontak">
+    <a href="mailto:info@ciffabeautyhouse.com">info@ciffabeautyhouse.com</a>
+  </div>
+  <div class="kontak-item">
+    <img src="images/facebook.png" alt="Facebook" class="ikon-kontak">
+    <a href="https://www.facebook.com/share/18ufFPefwz/?mibextid=wwXIfr" target="_blank">Sifa Setiani</a>
+  </div>
+  <div class="kontak-item">
+    <img src="images/instagram.png" alt="Instagram" class="ikon-kontak">
+    <a href="https://www.instagram.com/cifaa_123" target="_blank">@cifaa_123
+    </a>
+  </div>
+</section>
+ <!-- Halaman Keranjang -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>209240055_SIFA SUTIANI_ECommerce_UAS</title>
+</head>
+<body>
+
+    <section id="keranjang-belanja" class="halaman" style="display: block;">
+        <h2>Keranjang Belanja</h2>
+        <div class="keranjang-container">
+            <ul id="daftar-keranjang" class="items-keranjang">
+                </ul>
+            <div class="total-section">
+                <p><strong>Total: Rp<span id="total-harga">7.780.000</span></strong></p>
+                <a href="https://wa.wizard.id/66a1d8"
+                   target="_blank"
+                   style="display: inline-block; padding: 10px 20px; background-color: #28a745; color: white; text-align: center; text-decoration: none; border-radius: 5px; cursor: pointer;">
+                   Checkout
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+
+    <script>
+        // Jika Anda masih butuh fungsi tampilkan atau fungsi lain, biarkan di sini
+        function tampilkan(id) {
+            const semuaHalaman = document.querySelectorAll(".halaman");
+            semuaHalaman.forEach(halaman => {
+                halaman.style.display = "none";
+            });
+            document.getElementById(id).style.display = "block";
+        }
+        // Pastikan tidak ada kode JavaScript yang terkait dengan tombol checkout lama
+    </script>
+
+</body>
+</html>
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Ciffa Beauty House</p>
+  </footer>
+
+ <script>
+  function tampilkan(id) {
+    const semuaHalaman = document.querySelectorAll(".halaman");
+    semuaHalaman.forEach(section => section.style.display = "none");
+
+    const halamanAktif = document.getElementById(id);
+    if (halamanAktif) {
+      halamanAktif.style.display = "block";
+    }
+
+    if (id === "keranjang-belanja") {
+      tampilkanKeranjang();
+    }
+  }
+
+  // Ambil keranjang dari localStorage jika ada
+  let keranjang = JSON.parse(localStorage.getItem("keranjang")) || [];
+
+  function simpanKeranjang() {
+    localStorage.setItem("keranjang", JSON.stringify(keranjang));
+  }
+
+  function tambahKeKeranjang(namaProduk, harga) {
+    // Cek apakah produk sudah ada di keranjang
+const index = keranjang.findIndex(p => p.nama === namaProduk);
+if (index > -1) {
+  keranjang[index].jumlah = (keranjang[index].jumlah || 1) + 1;
+} else {
+  keranjang.push({ nama: namaProduk, harga: harga, jumlah: 1 });
+}
+
+    simpanKeranjang();
+    alert(`${namaProduk} berhasil ditambahkan ke keranjang.`);
+  }
+
+  function tampilkanKeranjang() {
+  const daftarKeranjang = document.getElementById("daftar-keranjang");
+  const totalHargaElement = document.getElementById("total-harga");
+  daftarKeranjang.innerHTML = "";
+
+  let total = 0;
+
+  keranjang.forEach((item, index) => {
+    const li = document.createElement("li");
+    li.innerHTML = `
+      ${item.nama} - Rp${(item.harga * (item.jumlah || 1)).toLocaleString()} 
+      <br>
+      <button onclick="kurangiJumlah(${index})">-</button>
+      <span style="margin: 0 10px;">${item.jumlah || 1}</span>
+      <button onclick="tambahJumlah(${index})">+</button>
+      <button onclick="hapusProduk(${index})" style="margin-left: 10px;">Hapus</button>
+    `;
+
+    daftarKeranjang.appendChild(li);
+
+    total += item.harga * (item.jumlah || 1);
+  });
+
+  totalHargaElement.textContent = total.toLocaleString();
+}
+
+
+  function hapusDariKeranjang(index) {
+    keranjang.splice(index, 1);
+    simpanKeranjang();
+    tampilkanKeranjang();
+  }
+
+  function tambahJumlah(index) {
+  keranjang[index].jumlah = (keranjang[index].jumlah || 1) + 1;
+  simpanKeranjang();
+  tampilkanKeranjang();
+}
+
+function kurangiJumlah(index) {
+  keranjang[index].jumlah = (keranjang[index].jumlah || 1) - 1;
+  if (keranjang[index].jumlah < 1) {
+    if (confirm("Ingin menghapus produk ini dari keranjang?")) {
+      keranjang.splice(index, 1);
+    } else {
+      keranjang[index].jumlah = 1;
+    }
+  }
+  simpanKeranjang();
+  tampilkanKeranjang();
+}
+
+function hapusProduk(index) {
+  if (confirm("Yakin ingin menghapus produk ini dari keranjang?")) {
+    keranjang.splice(index, 1);
+    simpanKeranjang();
+    tampilkanKeranjang();
+  }
+}
+
+  // Listener global agar tombol BELI berfungsi di mana pun
+  document.addEventListener("click", function (e) {
+    if (e.target.classList.contains("button-beli")) {
+      e.preventDefault();
+      const artikel = e.target.closest("article");
+      const namaProduk = artikel.querySelector("h3").textContent;
+      const hargaText = artikel.querySelector("p:last-of-type").textContent.replace(/[^\d]/g, "");
+      const harga = parseInt(hargaText);
+      tambahKeKeranjang(namaProduk, harga);
+    }
+  });
+
+  tampilkan("beranda"); // tampilkan halaman beranda saat pertama
+</script>
+
+<section id="set-skincare" class="halaman" style="display: none;">
+  <h2>Set Skincare</h2>
+  <div class="produk">
+    <article>
+      <img src="images/Images 1.jpeg" alt="Brightening Set" />
+      <h3>Brightening Advance Glowing Set</h3>
+      <p>
+        Skintific 5 Steps Glow Brightening Regime adalah rangkaian skincare yang fokus pada <strong>mencerahkan kulit kusam</strong>, <strong>meratakan warna kulit</strong>, dan <strong>mengurangi noda hitam</strong>. Paket ini cocok untuk kamu yang ingin mendapatkan kulit glowing dan tampak sehat secara alami.
+      </p>
+      <ul>
+        <li>Brightening Cleanser</li>
+        <li>Exfoliating Toner</li>
+        <li>Brightening Serum</li>
+        <li>Radiance Moisturizer</li>
+        <li>Glow Sunscreen SPF 50+ PA+++</li>
+      </ul>
+      <p><strong>Rp100.000</strong></p>
+      <a href="#" class="button-beli">BELI</a>
+    </article>
+
+    <article>
+      <img src="images/Images 4.jpeg" alt="Skin Barrier" />
+      <h3>Skin Barrier Protector</h3>
+      <p>
+        Paket Skintific You Skin Barrier Protector Set adalah rangkaian perawatan kulit lengkap yang dirancang untuk <strong>memperkuat skin barrier</strong>, <strong>menenangkan kulit sensitif</strong>, dan <strong>menjaga kelembapan optimal</strong>. Cocok untuk kulit kering dan mudah iritasi.
+      </p>
+      <ul>
+        <li>Gentle Cleanser</li>
+        <li>Hydrating Toner</li>
+        <li>Barrier Serum</li>
+        <li>Moisturizer Gel Cream</li>
+        <li>Barrier Sunscreen SPF 50+ PA++++</li>
+      </ul>
+      <p><strong>Rp300.000</strong></p>
+      <a href="#" class="button-beli">BELI</a>
+    </article>
+     <article>
+          <img src="images/feelingSerum.jpeg" alt="Skin Barrier" />
+          <h3>Peeling Serum skintific</h3>
+          <p>Peeling serum Skintific adalah serum eksfoliasi yang mengandung 12% AHA BHA PHA LHA untuk membantu mengangkat sel kulit mati, menghaluskan tekstur kulit, menyamarkan pori-pori, mencerahkan kulit, dan mengurangi komedo serta bruntusan. Serum ini diformulasikan untuk semua jenis kulit, termasuk kulit berjerawat, dan dapat membantu merawat dan menjaga kesehatan kulit. 
+             <p>Rp123.000</p>
+          <a href="#" class="button-beli">BELI</a>
+        </article>
+  </div>
+</section>
+
+<section id="makeup" class="halaman" style="display: none;">
+  <h2 class="judul-kategori">Makeup</h2>
+  <div class="produk kategori-skincare">
+    <article>
+      <img src="images/Images 2.jpeg" alt="Matte Makeup Set" />
+      <h3>Matte Makeup Set</h3>
+      <p>
+        Matte Makeup Set adalah koleksi makeup yang memberikan hasil akhir matte tahan lama tanpa membuat kulit terasa berat. Cocok untuk tampilan flawless sehari-hari hingga acara spesial.
+      </p>
+      <ul>
+        <li>Matte Foundation</li>
+        <li>Compact Powder</li>
+       <li>Matte Blush</li>
+        <li>Setting Spray</li>
+      </ul>
+      <p><strong>Rp500.000</strong></p>
+      <a href="#" class="button-beli">BELI</a>
+    </article>
+     <article>
+          <img src="images/Skintific_Loose_Powder.png" alt="Skin Barrier" />
+          <h3>loose powder skintific</h3>
+          <p>Loose powder Skintific, khususnya seri Invisiblur All Day Loose Powder, adalah bedak tabur yang diformulasikan dengan teknologi Soft Focus Polymer untuk menghasilkan partikel bedak halus yang menyatu dengan kulit dan memberikan efek "blurring" atau menyamarkan pori-pori serta tampilan kulit yang lebih halus. Bedak ini juga dirancang untuk mengontrol kilap berlebih pada wajah, menjaga riasan tetap segar hingga 12 jam, dan memberikan hasil akhir yang matte dan natural. </p>
+          <p>Rp250.000</p>
+          <a href="#" class="button-beli">BELI</a>
+        </article>
+  </div>
+</section>
+
+<section id="clay-stik-masker" class="halaman" style="display: none;">
+  <h2 class="judul-kategori">Clay Stik Masker</h2>
+  <div class="produk clay-kategori">
+    <article>
+      <img src="images/Images 3.jpeg" alt="Skintific Clay Stik Masker" />
+      <h3>Skintific Clay Stik Masker</h3>
+      <p>
+        Clay Stik Masker dengan formula khusus membantu <strong>membersihkan pori-pori</strong>, <strong>mengangkat sel kulit mati</strong>, dan <strong>mengontrol produksi minyak berlebih</strong>. Praktis digunakan dan cocok untuk kulit berminyak maupun kombinasi.
+      </p>
+      <ul>
+        <li>Green Tea Clay Stick</li>
+        <li>Pinkie Mud Stick</li>
+        <li>Charcoal Detox Stick</li>
+      </ul>
+      <p><strong>Rp340.000</strong></p>
+      <a href="#" class="button-beli">BELI</a>
+    </article>
+  </div>
+</section>
+</body>
+</html>
+
+

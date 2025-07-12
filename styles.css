@@ -1,0 +1,719 @@
+:root {
+  --primary-color: #010377;
+  --secondary-color: #f70e96;
+  --accent-color: #b8c4e9;
+  --text-light: #f8f7f7;
+  --text-dark: #e92c2c;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #d88ec4, #fcecf8);
+}
+
+.nama {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #080707;
+    background-color: (135deg, #d88ec4, #fcecf8);
+    padding: 1rem;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(253, 251, 253);
+  padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 180px; /* mengubah jarak menu */
+    justify-content: space-around;
+    padding: 0;
+    font-weight: bold;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 15px 50px; /* merubah ukuran kotak menu */
+    color: rgb(0, 0, 0);
+    border: 3px solid #a5678b;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1rem; /* merubah ukuran font kotak menu */
+}
+
+nav ul li a:hover {
+    background-color: rgb(236, 149, 200);
+    color: rgb(252, 249, 249);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.keranjang img {
+  width: 40px;
+  height: autO;
+  cursor: pointer;
+  background-color: #fdf8f8;
+  border-radius: 50px;
+  padding: 15px;
+  
+
+}
+
+.keranjang img:hover {
+background-color: #ffffffd5;
+    color: rgb(14, 1, 1);
+   
+
+}
+
+main {
+    padding: 1rem;
+}
+
+.produk {
+    display: flex;
+    gap: 30px; /* atur jarak antar produk */
+    flex-wrap: wrap;
+    justify-content: center; /* ubah dari space-between ke center */
+    padding: 1rem;
+}
+
+.produk article {
+    border: 3px solid #d88ec4;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 6px 8px rgba(0, 0, 0, 0.2);
+    width: calc(25% - 2rem);
+    box-sizing: border-box;
+    background-color: #fff;
+    text-align: center;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 110px; 
+}
+
+.produk article img {
+    width: 80%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.produk article a.button-beli {
+    margin-top: auto;
+}
+
+.produk article h3 {
+    font-size: 20px;
+    color: #2600ff;
+}
+
+.produk article p {
+    font-size: 15px;
+    padding: 10px;
+    color: #666;
+}
+
+.produk article a {
+
+  background-color: #044ff1;
+  text-decoration: none;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tambahkan di bawah semua CSS sebelumnya */
+
+.daftar-kategori {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.kategori-item {
+  flex: 1 1 calc(25% - 2rem);
+  max-width: calc(25% - 2rem);
+  background-color: #fff;
+  border: 3px solid #3700ff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 6px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.kategori-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.kategori-item h3 {
+  font-size: 18px;
+  color: #2600ff;
+  margin: 0;
+}
+
+.kategori-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.button-beli {
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button-beli:hover {
+  background-color: #9bbdfc;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 1200px) {
+  nav ul {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .produk article {
+    width: calc(33.33% - 2rem);
+  }
+  
+  .kategori-item {
+    flex: 1 1 calc(33.33% - 2rem);
+    max-width: calc(33.33% - 2rem);
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  nav ul {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  nav ul li a {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .produk article {
+    width: calc(50% - 1rem);
+  }
+  
+  .kategori-item {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+  
+  #set-skincare .produk article,
+  #makeup .produk article,
+  #clay-stik-masker .produk article {
+    width: calc(80% - 1rem);
+  }
+}
+
+@media (max-width: 576px) {
+  .nama h1 {
+    font-size: 1.5rem;
+  }
+  
+  nav ul {
+    gap: 5px;
+  }
+  
+  nav ul li a {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+  
+  .produk article {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .kategori-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  
+  #set-skincare .produk article,
+  #makeup .produk article,
+  #clay-stik-masker .produk article {
+    width: 100%;
+  }
+  
+  .keranjang img {
+    width: 30px;
+    padding: 10px;
+  }
+  
+  #daftar-keranjang li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .item-aksi {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+    .produk article {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .produk article {
+        width: 100%;
+    }
+}
+
+.kontak-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ikon-kontak {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/* SETTING ID SET SKINCARE */
+#set-skincare h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 0 6px 6px black;
+}
+
+#set-skincare {
+  background-image: url('images/bg-skincare-modern.jpg'); /* sesuaikan path gambarnya */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2rem 1rem;
+}
+
+/* Gambar produk di halaman kategori Set Skincare */
+#set-skincare .produk article img {
+  width: 200px; /* Sesuaikan ukuran yang kamu inginkan */
+  height: auto;
+  border: 2px solid #ccc; /* Border abu-abu lembut */
+  border-radius: 10px; /* Agar sudut gambar membulat */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan halus */
+  margin-bottom: 10px;
+}
+
+#set-skincare .produk article {
+  width: calc(40% - 2rem); /* bisa disesuaikan jadi 50% atau 100% */
+  margin: 0 auto;
+}
+
+/* Tambahan agar ul dan li dalam deskripsi produk tampil rapi */
+.produk article ul {
+  margin: 0.5rem 0 0.5rem 1.2rem;
+  padding-left: 1rem;
+  list-style-type: disc;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.produk article ul li {
+  margin-bottom: 0.4rem;
+}
+
+/* Memastikan paragraf dalam artikel terlihat baik */
+.produk article p {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* SETTING ID MAKEUP */
+
+#makeup h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 0 6px 6px black;
+}
+
+#makeup {
+  background-image: url('images/bg-skincare-modern.jpg'); /* Gunakan gambar yang sama, atau ganti bg-makeup.jpg jika berbeda */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2rem 1rem;
+}
+
+/* Gambar produk di halaman kategori Makeup */
+#makeup .produk article img {
+  width: 200px;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+#makeup .produk article {
+  width: calc(40% - 2rem);
+  margin: 0 auto;
+  border: 3px solid #053ef8;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 6px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 110px;
+}
+
+/* SETTING ID CLAY STIK MASKER */
+#clay-stik-masker h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 0 6px 6px black;
+}
+
+#clay-stik-masker {
+  background-image: url('images/bg-skincare-modern.jpg'); /* Gunakan gambar yang sama, atau ganti bg-makeup.jpg jika berbeda */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2rem 1rem;
+}
+
+/* Gambar produk di halaman kategori Makeup */
+#clay-stik-masker .produk article img {
+  width: 200px;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+#clay-stik-masker .produk article {
+  width: calc(40% - 2rem);
+  margin: 0 auto;
+  border: 3px solid #0741fd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 6px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 110px;
+}
+
+/* SETTING HALAMAN KERANJANG */
+/* Tampilan modern untuk halaman keranjang */
+#keranjang-belanja {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#keranjang-belanja h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #d63384;
+}
+
+#daftar-keranjang {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#daftar-keranjang li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 12px 20px;
+  margin-bottom: 15px;
+  transition: background-color 0.2s ease;
+}
+
+#daftar-keranjang li:hover {
+  background-color: #e9ecef;
+}
+
+/* Menyusun konten keranjang dengan rapi */
+.item-keranjang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.item-info {
+  flex: 1;
+  font-weight: 500;
+}
+
+.item-aksi {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+#daftar-keranjang button {
+  background-color: #35addc;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+#daftar-keranjang button:hover {
+  background-color: #f023f7;
+}
+
+#keranjang-belanja p {
+  font-size: 20px;
+  text-align: right;
+  margin-top: 30px;
+}
+
+#keranjang-belanja strong {
+  color: #1900ff;
+}
+
+@media (max-width: 1200px) {
+  nav ul {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .produk article {
+    width: calc(33.33% - 2rem);
+  }
+  
+  .kategori-item {
+    flex: 1 1 calc(33.33% - 2rem);
+    max-width: calc(33.33% - 2rem);
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  nav ul {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  nav ul li a {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .produk article {
+    width: calc(50% - 1rem);
+  }
+  
+  .kategori-item {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+  
+  #set-skincare .produk article,
+  #makeup .produk article,
+  #clay-stik-masker .produk article {
+    width: calc(80% - 1rem);
+  }
+}
+
+@media (max-width: 576px) {
+  .nama h1 {
+    font-size: 1.5rem;
+  }
+  
+  nav ul {
+    gap: 5px;
+  }
+  
+  nav ul li a {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+  
+  .produk article {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .kategori-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  
+  #set-skincare .produk article,
+  #makeup .produk article,
+  #clay-stik-masker .produk article {
+    width: 100%;
+  }
+  
+  .keranjang img {
+    width: 30px;
+    padding: 10px;
+  }
+  
+  #daftar-keranjang li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .item-aksi {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+}
+
+.keranjang-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fff7fb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+.items-keranjang {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.items-keranjang li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.items-keranjang li button {
+  background-color: #ec6f99;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.items-keranjang li button:hover {
+  background-color: #d81b60;
+}
+
+.total-section {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.total-section strong {
+  font-size: 22px;
+  color: #e91e63;
+}
+
+.checkout-btn {
+  background-color: #1bfd27;
+  color: white;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.checkout-btn:hover {
+  background-color: #d81b60;
+}
